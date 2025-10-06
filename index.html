@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Controle LEDs BLE (ESP32)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Controle LEDs BLE (ESP32)</h1>
+      <div class="controls">
+        <button id="btnConnect">Conectar</button>
+        <button id="btnAllOn" disabled>Todos ON</button>
+        <button id="btnAllOff" disabled>Todos OFF</button>
+        <span id="status" class="status">Desconectado</span>
+      </div>
+
+      <div class="leds">
+        <button class="toggle" data-bit="0" disabled>Toggle Verde</button>
+        <span class="led" id="led0"></span>
+
+        <button class="toggle" data-bit="1" disabled>Toggle Amarelo</button>
+        <span class="led" id="led1"></span>
+
+        <button class="toggle" data-bit="2" disabled>Toggle Vermelho</button>
+        <span class="led" id="led2"></span>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
